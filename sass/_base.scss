@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 40%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 30%;
+  }
+}
+
+body {
+  background-color: $main-backgorund;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    width: 80%;
+    height: 90%;
+    margin-top: 2rem;
+  }
+}
+
+.attribution {
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  @media only screen and (max-width: $bp-medium) {
+    top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: $accent;
+    font-weight: 700;
+  }
+}

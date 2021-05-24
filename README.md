@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
+- Solution URL: https://lsilva92.github.io/Stats-preview-card---FrontEnd-Mentor/
 
 ## My process
 
